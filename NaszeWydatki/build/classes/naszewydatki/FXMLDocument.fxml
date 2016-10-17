@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naszewydatki.FXMLDocumentController">
+    <children>
+        <Button fx:id="buttonNowa" layoutX="14.0" layoutY="243.0" onAction="#addButtonClicked" prefHeight="25.0" prefWidth="158.0" text="Nowy Wydatek/Przychod" />
+      <Button fx:id="buttonSzczegoly" layoutX="183.0" layoutY="243.0" mnemonicParsing="false" onAction="#showDetailsWindow" text="Szczególy" />
+      <Button layoutX="259.0" layoutY="243.0" mnemonicParsing="false" onAction="#showChartsWindow" text="Analizuj" />
+      <Button layoutX="325.0" layoutY="243.0" mnemonicParsing="false" onAction="#showCategoriesWindow" text="Kategorie" />
+      <Label layoutX="20.0" layoutY="6.0" text="Program nasze wydatki">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <BarChart fx:id="chartBar" layoutY="54.0" prefHeight="186.0" prefWidth="393.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+    </children>
+</AnchorPane>

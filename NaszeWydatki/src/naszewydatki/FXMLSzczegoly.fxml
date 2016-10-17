@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="naszewydatki.FXMLSzczegolyController">
+   <children>
+      <TableView fx:id="tableTable" layoutX="6.0" layoutY="64.0" prefHeight="322.0" prefWidth="591.0">
+        <columns>
+          <TableColumn prefWidth="31.0" text="ID" />
+          <TableColumn prefWidth="77.0" text="Data" />
+            <TableColumn prefWidth="91.0" text="Kwota" />
+            <TableColumn prefWidth="285.0" text="Opis" />
+            <TableColumn minWidth="0.0" prefWidth="103.0" text="Kategoria" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="25.0" prefWidth="168.0" text="Dodaj Wydatek/Przychod" />
+      <Button layoutX="192.0" layoutY="23.0" mnemonicParsing="false" onAction="#editButtonClicked" prefHeight="25.0" prefWidth="58.0" text="Edytuj" />
+      <Button layoutX="258.0" layoutY="23.0" mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="25.0" prefWidth="58.0" text="Usuń" />
+   </children>
+</AnchorPane>
